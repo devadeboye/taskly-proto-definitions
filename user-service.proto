@@ -5,7 +5,7 @@ package user_service;
 service UserService {
   // rpc FindById (UserById) returns (User);
 
-  rpc Hello (HelloRequest) returns (HelloReply);
+  rpc Hello (Empty) returns (HelloReply);
 }
 
 message UserById {
@@ -17,10 +17,6 @@ message User {
   string username = 2;
   int32 version = 3;
   bool isDeleted = 4;
-}
-
-message HelloRequest {
-  string name = 1;
 }
 
 message HelloReply {

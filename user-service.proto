@@ -3,7 +3,7 @@ syntax = "proto3";
 package user_service;
 
 service UserService {
-  rpc FindById (UserById) returns (User);
+  // rpc FindById (UserById) returns (User);
 
   rpc Hello (HelloRequest) returns (HelloReply);
 }
@@ -27,5 +27,4 @@ message HelloReply {
   string message = 1;
 }
 
-// Empty message for requests that don't require parameters
 message Empty {}

@@ -10,15 +10,11 @@ message UserById {
   string id = 1;
 }
 
-message User {
+message UserDto {
   string id = 1;
   string username = 2;
   int32 version = 3;
   bool isDeleted = 4;
-}
-
-message HelloReply {
-  string message = 1;
 }
 
 message Empty {}

@@ -3,7 +3,7 @@ syntax = "proto3";
 package user_service;
 
 service UserService {
-  rpc FindById (UserById) returns (User);
+  rpc FindById (UserById) returns (UserDto);
 }
 
 message UserById {
